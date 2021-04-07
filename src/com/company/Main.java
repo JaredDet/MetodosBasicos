@@ -29,7 +29,7 @@ public class Main {
         try{
             entrada = Entrada();
         }
-        catch(Exception exception){
+        catch(ExceptionInInitializerError){
             System.out.println("¡Error!");
             validarEntrada();
         }
