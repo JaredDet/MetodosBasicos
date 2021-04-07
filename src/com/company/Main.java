@@ -16,9 +16,9 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese entrada");
 
-        int entrada = teclado.nextInt();
+        String entrada = teclado.nextLine();
 
-            return entrada;
+            return Integer.parseInt(entrada);
     }
 
     //Metodo que valida una entrada
