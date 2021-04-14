@@ -34,7 +34,7 @@ public class Main {
             entrada = Integer.parseInt(entradaString());
         }
 
-        catch(Exception exception){
+        catch(NumberFormatException ex){
 
             System.out.println("¡Error!");
             
