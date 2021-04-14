@@ -6,32 +6,39 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        validarEntrada();
+        
+        System.out.println(entradaInt());
     }
 
-    //Metodo que crea una entrada
+    //Metodo que crea una entrada de String
 
-    public static int Entrada(){
+    public static String entradaString(){
 
         Scanner teclado = new Scanner(System.in);
+        
         System.out.println("Ingrese entrada");
-
+        
         String entrada = teclado.nextLine();
 
-            return Integer.parseInt(entrada);
+            return entrada;
     }
 
-    //Metodo que valida una entrada
+    //Metodo que crea una entrada de entero
 
-    public static int validarEntrada(){
+    public static int entradaInt(){
 
         int entrada = 0;
+
         try{
-            entrada = Entrada();
+
+            entrada = Integer.parseInt(entradaString());
         }
-        catch(ExceptionInInitializerError){
+
+        catch(Exception exception){
+
             System.out.println("¡Error!");
-            validarEntrada();
+            
+            entrada = entradaInt();
         }
         return entrada;
     }
