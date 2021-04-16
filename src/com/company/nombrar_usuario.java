@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class NombrarUsuario {
+public class nombrar_usuario {
 
     //Metodo que crea una entrada de String
 
@@ -14,9 +14,7 @@ public class NombrarUsuario {
 
         System.out.println("Ingrese entrada");
 
-        String entrada = teclado.nextLine();
-
-        return entrada;
+        return teclado.nextLine();
     }
 
     //Metodo que valida que dicho nombre de usuario sea válido
